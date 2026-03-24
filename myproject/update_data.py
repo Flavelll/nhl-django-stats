@@ -4,14 +4,14 @@ import sqlite3
 import time
 
 # ==============================
-# Налаштування
+# Settings
 # ==============================
 SEASON = 2025
 DB_PATH = "/app/db.sqlite3"
 SLEEP_BETWEEN = 0.05
 
 # ==============================
-# Допоміжні функції
+# Helper functions
 # ==============================
 def fetch_game(game_id):
     url = f"https://api-web.nhle.com/v1/gamecenter/{game_id}/boxscore"
@@ -111,15 +111,15 @@ def get_last_game_id(cursor):
     return result
 
 # ==============================
-# Головна функція
+# Main function
 # ==============================
 def main():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
-    # --- отримуємо останній GameId ---
+    # --- get the last GameId from DB ---
     last_game_id = get_last_game_id(cursor)
-    print("Останній GameId у базі:", last_game_id)
+    print("Last GameId in DB:", last_game_id)
 
     start_reg = 1
     start_po = None
@@ -127,37 +127,37 @@ def main():
     if last_game_id:
         last_game_id = str(last_game_id)
 
-        # ---------------- REGULAR ----------------
+        # ---------------- REGULAR SEASON ----------------
         if last_game_id.startswith(f"{SEASON}02"):
             start_reg = int(last_game_id[-4:]) + 1
-            print(f"Продовжуємо регулярку з гри: {start_reg}")
+            print(f"Continuing regular season from game: {start_reg}")
 
         # ---------------- PLAYOFF ----------------
         elif last_game_id.startswith(f"{SEASON}03"):
-            # формат: 2025 03 R S G
+            # format: 2025 03 R S G
             round_ = int(last_game_id[6])
             series = int(last_game_id[7])
             game = int(last_game_id[8])
 
             start_po = (round_, series, game + 1)
-            print(f"Продовжуємо плей-оф з: round={round_}, series={series}, game={game+1}")
+            print(f"Continuing playoffs from: round={round_}, series={series}, game={game+1}")
 
     # ---------------- REGULAR SEASON ----------------
-    if start_po is None:  # якщо ще не було плей-оф
+    if start_po is None:  # if playoffs not started yet
         for game in range(start_reg, 1400):
             game_id = f"{SEASON}02{game:04d}"
             print("REG:", game_id)
 
             data = fetch_game(game_id)
             if not data:
-                print(f"Немає даних для {game_id}")
+                print(f"No data for {game_id}")
                 continue
 
             rows = extract_rows(data)
             if rows:
                 insert_rows(cursor, rows)
                 conn.commit()
-                print(f"Вставлено {len(rows)} рядків для {game_id}")
+                print(f"Inserted {len(rows)} rows for {game_id}")
 
             time.sleep(SLEEP_BETWEEN)
 
@@ -181,14 +181,14 @@ def main():
 
                 data = fetch_game(game_id)
                 if not data:
-                    print(f"Немає даних для {game_id}")
+                    print(f"No data for {game_id}")
                     continue
 
                 rows = extract_rows(data)
                 if rows:
                     insert_rows(cursor, rows)
                     conn.commit()
-                    print(f"Вставлено {len(rows)} рядків для {game_id}")
+                    print(f"Inserted {len(rows)} rows for {game_id}")
 
                 time.sleep(SLEEP_BETWEEN)
 
@@ -196,9 +196,9 @@ def main():
         start_game = 1
 
     conn.close()
-    print("Готово! Всі нові ігри додані.")
+    print("Done! All new games added.")
 # ==============================
-# Старт
+# Start
 # ==============================
 if __name__ == "__main__":
     main()

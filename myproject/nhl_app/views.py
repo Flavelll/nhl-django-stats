@@ -18,7 +18,6 @@ from .queries import (
 def nhl_stats_view(request):
     form = TeamCompareForm(request.GET or None)
 
-    # Дефолтні значення
     team = ['FLA']
     seasons = [20242025]
     game_types = [2,3]

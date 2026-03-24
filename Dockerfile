@@ -1,35 +1,36 @@
 # ==============================
-# Dockerfile для Django + SQLite
+# Dockerfile for Django + SQLite
 # ==============================
 
 FROM python:3.12-slim
 
 # ==============================
-# Робоча директорія
+# Set working directory
 # ==============================
 WORKDIR /app
 
 # ==============================
-# Установка sqlite3 та інших утиліт
+# Install sqlite3
 # ==============================
 RUN apt-get update && apt-get install -y \
     sqlite3 \
     && rm -rf /var/lib/apt/lists/*
 
 # ==============================
-# Копіюємо Django-проєкт
+# Copy Django project
 # ==============================
 COPY ./myproject ./myproject
 
 # ==============================
-# Встановлюємо залежності Python
+# Install Python requirements
 # ==============================
 RUN pip install --no-cache-dir -r ./myproject/requirements.txt
 
 # ==============================
-# Міграції Django + імпорт CSV + init_sqlite.sql
+# Initialize SQLite database:
+# - run init.sql
+# - import CSV files
 # ==============================
-
 RUN sqlite3 db.sqlite3 <<EOF
 .read ./myproject/nhl_app/scripts/init.sql
 .separator ","
@@ -38,18 +39,17 @@ RUN sqlite3 db.sqlite3 <<EOF
 .import --skip 1 ./myproject/nhl_app/data/story.csv story
 EOF
 
+# ==============================
+# Apply Django migrations
+# ==============================
 RUN python myproject/manage.py migrate
-# ==============================
-# Збір статичних файлів
-# ==============================
-# RUN python myproject/manage.py collectstatic --noinput
 
 # ==============================
-# Порт для Django
+# Expose port for Django
 # ==============================
 EXPOSE 8000
 
 # ==============================
-# CMD для запуску сервера
+# Start Django development server
 # ==============================
 CMD ["python", "myproject/manage.py", "runserver", "0.0.0.0:8000"]

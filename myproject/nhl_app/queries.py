@@ -25,13 +25,11 @@ def fetch_all(query: str, params=None):
 # 🔹 TEAM STATS OVERALL
 # ==========================================================
 def get_team_total(teams, seasons, game_types):
-    # конвертуємо списки у рядки для SQLite
     teams = teams or []
     seasons = seasons or []
     game_types = game_types or []
 
     if not teams or not seasons or not game_types:
-        # якщо хочеш, можна відразу повернути порожній список
         return []
 
     teams_str = ','.join(f"'{t}'" for t in teams)
@@ -58,7 +56,6 @@ def get_team_games(teams, seasons, game_types):
     game_types = game_types or []
 
     if not teams or not seasons or not game_types:
-        # якщо хочеш, можна відразу повернути порожній список
         return []
 
     teams_str = ','.join(f"'{t}'" for t in teams)
@@ -87,7 +84,6 @@ def get_players_total(teams, seasons, game_types):
     game_types = game_types or []
 
     if not teams or not seasons or not game_types:
-        # якщо хочеш, можна відразу повернути порожній список
         return []
 
     teams_str = ','.join(f"'{t}'" for t in teams)
@@ -114,7 +110,6 @@ def get_goalies_total(teams, seasons, game_types):
     game_types = game_types or []
 
     if not teams or not seasons or not game_types:
-        # якщо хочеш, можна відразу повернути порожній список
         return []
 
     teams_str = ','.join(f"'{t}'" for t in teams)

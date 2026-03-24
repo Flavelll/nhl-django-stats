@@ -1,53 +1,53 @@
 # ==============================
-# Налаштування
+# Settings
 # ==============================
 IMAGE=flavel/nhl_project
 TAG=latest
 CONTAINER=nhl_parser
 
 # ==============================
-# Build образу
+# Build Docker image
 # ==============================
 build:
 	docker build -t $(IMAGE):$(TAG) .
 
 # ==============================
-# Запуск контейнера (Django)
+# Run container (Django)
 # ==============================
 run:
 	docker run -d -p 8000:8000 --name $(CONTAINER) $(IMAGE):$(TAG)
 
 # ==============================
-# Зупинка контейнера
+# Stop container
 # ==============================
 stop:
 	docker stop $(CONTAINER) || true
 	docker rm $(CONTAINER) || true
 
 # ==============================
-# Перезапуск (оновити контейнер)
+# Restart container (update)
 # ==============================
 restart: stop run
 
 # ==============================
-# Логи
+# View logs
 # ==============================
 logs:
 	docker logs -f $(CONTAINER)
 
 # ==============================
-# Запуск update_data.py
+# Run update_data.py inside container
 # ==============================
 update:
 	docker exec -it $(CONTAINER) python myproject/update_data.py
 
 # ==============================
-# Пуш на Docker Hub
+# Push image to Docker Hub
 # ==============================
 push:
 	docker push $(IMAGE):$(TAG)
 
 # ==============================
-# Повний цикл
+# Full cycle: build, stop, run
 # ==============================
 all: build stop run
