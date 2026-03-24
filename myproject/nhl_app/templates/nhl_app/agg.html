@@ -1,0 +1,23 @@
+<h2>Teams Aggregation</h2>
+
+
+<table border="1">
+    {% if team_agg %}
+        <thead>
+            <tr>
+                {% for key in team_agg.0.keys %}
+                    <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in team_agg %}
+                <tr>
+                    {% for value in row.values %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    {% endif %}
+</table>

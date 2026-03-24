@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NHL Stats </title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #111; color: #eee; margin: 20px; }
+        h1, h2, h3 { color: #fff; }
+
+        /* Таблиці */
+        table { border-collapse: collapse; margin-bottom: 20px; width: 100%; font-size: 0.9em; }
+        th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+        th { background: #222; position: sticky; top: 0; cursor: pointer; }
+        th:hover { background: #333; }
+        tr:nth-child(even) { background: #1a1a1a; }
+
+        /* Контейнер для стовпців */
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            width: 70%;
+        }
+
+        .team-column {
+            flex: 1;
+            min-width: 0; /* Важливо для Flexbox */
+        }
+
+        /* Картки матчів */
+        .match-card {
+            border: 1px solid #444;
+            margin-bottom: 25px;
+            background: #161616;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .match-header {
+            background: #2c2c2c;
+            padding: 10px;
+            font-weight: bold;
+            border-bottom: 1px solid #444;
+            color: #00d1ff;
+        }
+
+
+        /* Контейнер для прокрутки таблиці */
+        .table-wrapper {
+            width: 100%;
+            max-height: 500px;
+            margin-bottom: 25px;
+            border: 1px solid #333;
+            border-radius: 1px;
+            background: #1a1a1a;
+
+        }
+
+        /* Форма */
+            .filters{
+        display:flex;
+        gap:20px;
+        align-items:flex-end;
+    }
+
+    .filter{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .filter select{
+        width:120px;
+        height:90px;
+    }
+
+        form { background: #222; padding: 20px; border-radius: 3px; margin-bottom: 5px; }
+        .form-control { background: #333; color: #fff; border: 1px solid #444; padding: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>NHL Team Stats</h1>
+
+
+    <form method="get" class="filters">
+
+        <div class="filter">
+            {{ form.team.label_tag }}
+            {{ form.team }}
+        </div>
+
+        <div class="filter">
+            {{ form.season.label_tag }}
+            {{ form.season }}
+        </div>
+
+        <div class="filter">
+            {{ form.game_type.label_tag }}
+            {{ form.game_type }}
+        </div>
+
+        <button type="submit">Get Stat By Team</button>
+
+    </form>
+    <h2>{{ team }}</h2>
+
+
+    <h3>Season Total</h3>
+    <div class="table-wrapper">
+    {% include "nhl_app/table.html" with data=team_total %}
+    </div>
+
+    <h3>Games Summary</h3>
+    <div class="table-wrapper">
+    {% include "nhl_app/table.html" with data=team_games %}
+    </div>
+
+    <h3>Skaters Total by TEAM</h3>
+    <div class="table-wrapper">
+    {% include "nhl_app/table.html" with data=team_players %}
+    </div>
+
+    <h3>Goalies Total by TEAM</h3>
+    <div class="table-wrapper">
+    {% include "nhl_app/table.html" with data=player_goalies %}
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
+

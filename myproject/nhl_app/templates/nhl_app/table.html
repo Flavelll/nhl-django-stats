@@ -1,0 +1,30 @@
+<!-- nhl_app/table.html -->
+{% if data and data|length > 0 %}
+
+<div class="table-wrapper"
+    style="overflow-x: auto;">
+    <table class="sortable">
+        <thead>
+            <tr>
+                {% for key in data.0.keys %}
+                    <th>{{ key }} <span style="font-size: 0.8em; color: #888;">↕</span></th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    {% for value in row.values %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<p style="color: #888; font-style: italic;">No data available</p>
+{% endif %}
+
+
+
