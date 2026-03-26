@@ -37,6 +37,8 @@ RUN sqlite3 db.sqlite3 <<EOF
 .mode csv
 .import --skip 1 ./myproject/nhl_app/data/boxscore.csv bx
 .import --skip 1 ./myproject/nhl_app/data/story.csv story
+.import --skip 1 ./myproject/f1_app/data/f1_sessions_2026.csv f1_sessions
+.import --skip 1 ./myproject/f1_app/data/f1_laps_2026.csv f1_laps
 EOF
 
 # ==============================

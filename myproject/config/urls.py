@@ -23,7 +23,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('stats_app.urls')),         # Головна сторінка
-    path('nhl/', include('nhl_app.urls')),       # Шлях в браузері буде /nhl/
-    # path('f1/', include('formula_one.urls')),    # Шлях в браузері буде /f1/
+    path('', include('stats_app.urls')),
+    path('nhl/', include('nhl_app.urls')),
+    path('f1/', include('f1_app.urls')),
 ]

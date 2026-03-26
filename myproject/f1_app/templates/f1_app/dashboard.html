@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F1 Lap Analysis</title>
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>F1 Lap Analysis</h1>
+
+    <form method="get">
+        <div>
+            <label>{{ form.session.label }}:</label>
+            {{ form.session }}
+        </div>
+
+        <div style="margin-top: 10px;">
+            <label><strong>Drivers:</strong></label><br>
+            {% if form.fields.drivers.choices %}
+                {{ form.drivers }}
+            {% else %}
+                <p style="color: gray;">No drivers found for this session.</p>
+            {% endif %}
+        </div>
+
+        <button type="submit" style="margin-top: 10px;">Apply</button>
+    </form>
+
+    <hr>
+
+    <div id="chart" style="width:90%; height:600px; margin:auto;"></div>
+
+    <script>
+        const rawData = {{ chart_data|safe }};
+
+        if (Object.keys(rawData).length === 0) {
+            document.getElementById("chart").innerHTML = "<p>No data to display</p>";
+        } else {
+
+            const traces = Object.keys(rawData).map(driver => ({
+                x: rawData[driver].laps,
+                y: rawData[driver].times,
+                mode: 'lines+markers',
+                name: 'Driver ' + driver,
+                hovertemplate:
+                    'Lap: %{x}<br>' +
+                    'Time: %{y:.3f}s<br>' +
+                    '<extra>Driver ' + driver + '</extra>'
+            }));
+
+            const layout = {
+                title: "Lap Time Comparison",
+                xaxis: {
+                    title: "Lap Number",
+                    showspikes: true
+                },
+                yaxis: {
+                    title: "Lap Time (s)",
+                    autorange: true
+                },
+                hovermode: "x unified",
+                dragmode: "zoom",
+            };
+
+            const config = {
+                responsive: true,
+                scrollZoom: true,
+                displayModeBar: true
+            };
+
+            Plotly.newPlot("chart", traces, layout, config);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+session_key,meeting_key,session_type,session_name,date_start,date_end,circuit_short_name,country_name,location,year
+11465,1304,Practice,Day 1,2026-02-11T07:00:00+00:00,2026-02-11T16:00:00+00:00,Sakhir,Bahrain,Bahrain,2026
+11466,1304,Practice,Day 2,2026-02-12T07:00:00+00:00,2026-02-12T16:00:00+00:00,Sakhir,Bahrain,Bahrain,2026
+11467,1304,Practice,Day 3,2026-02-13T07:00:00+00:00,2026-02-13T16:00:00+00:00,Sakhir,Bahrain,Bahrain,2026
+11470,1305,Practice,Day 1,2026-02-18T07:00:00+00:00,2026-02-18T16:00:00+00:00,Sakhir,Bahrain,Bahrain,2026
+11469,1305,Practice,Day 2,2026-02-19T07:00:00+00:00,2026-02-19T16:00:00+00:00,Sakhir,Bahrain,Bahrain,2026
+11468,1305,Practice,Day 3,2026-02-20T07:00:00+00:00,2026-02-20T16:00:00+00:00,Sakhir,Bahrain,Bahrain,2026
+11227,1279,Practice,Practice 1,2026-03-06T01:30:00+00:00,2026-03-06T02:30:00+00:00,Melbourne,Australia,Melbourne,2026
+11228,1279,Practice,Practice 2,2026-03-06T05:00:00+00:00,2026-03-06T06:00:00+00:00,Melbourne,Australia,Melbourne,2026
+11229,1279,Practice,Practice 3,2026-03-07T01:30:00+00:00,2026-03-07T02:30:00+00:00,Melbourne,Australia,Melbourne,2026
+11230,1279,Qualifying,Qualifying,2026-03-07T05:00:00+00:00,2026-03-07T06:00:00+00:00,Melbourne,Australia,Melbourne,2026
+11234,1279,Race,Race,2026-03-08T04:00:00+00:00,2026-03-08T06:00:00+00:00,Melbourne,Australia,Melbourne,2026
+11235,1280,Practice,Practice 1,2026-03-13T03:30:00+00:00,2026-03-13T04:30:00+00:00,Shanghai,China,Shanghai,2026
+11236,1280,Qualifying,Sprint Qualifying,2026-03-13T07:30:00+00:00,2026-03-13T08:14:00+00:00,Shanghai,China,Shanghai,2026
+11240,1280,Race,Sprint,2026-03-14T03:00:00+00:00,2026-03-14T04:00:00+00:00,Shanghai,China,Shanghai,2026
+11241,1280,Qualifying,Qualifying,2026-03-14T07:00:00+00:00,2026-03-14T08:00:00+00:00,Shanghai,China,Shanghai,2026
+11245,1280,Race,Race,2026-03-15T07:00:00+00:00,2026-03-15T09:00:00+00:00,Shanghai,China,Shanghai,2026
+11246,1281,Practice,Practice 1,2026-03-27T02:30:00+00:00,2026-03-27T03:30:00+00:00,Suzuka,Japan,Suzuka,2026
+11247,1281,Practice,Practice 2,2026-03-27T06:00:00+00:00,2026-03-27T07:00:00+00:00,Suzuka,Japan,Suzuka,2026
+11248,1281,Practice,Practice 3,2026-03-28T02:30:00+00:00,2026-03-28T03:30:00+00:00,Suzuka,Japan,Suzuka,2026
+11249,1281,Qualifying,Qualifying,2026-03-28T06:00:00+00:00,2026-03-28T07:00:00+00:00,Suzuka,Japan,Suzuka,2026
+11253,1281,Race,Race,2026-03-29T05:00:00+00:00,2026-03-29T07:00:00+00:00,Suzuka,Japan,Suzuka,2026
+11254,1282,Practice,Practice 1,2026-04-10T11:30:00+00:00,2026-04-10T12:30:00+00:00,Sakhir,Bahrain,Sakhir,2026
+11255,1282,Practice,Practice 2,2026-04-10T15:00:00+00:00,2026-04-10T16:00:00+00:00,Sakhir,Bahrain,Sakhir,2026
+11256,1282,Practice,Practice 3,2026-04-11T12:30:00+00:00,2026-04-11T13:30:00+00:00,Sakhir,Bahrain,Sakhir,2026
+11257,1282,Qualifying,Qualifying,2026-04-11T16:00:00+00:00,2026-04-11T17:00:00+00:00,Sakhir,Bahrain,Sakhir,2026
+11261,1282,Race,Race,2026-04-12T15:00:00+00:00,2026-04-12T17:00:00+00:00,Sakhir,Bahrain,Sakhir,2026
+11262,1283,Practice,Practice 1,2026-04-17T13:30:00+00:00,2026-04-17T14:30:00+00:00,Jeddah,Saudi Arabia,Jeddah,2026
+11263,1283,Practice,Practice 2,2026-04-17T17:00:00+00:00,2026-04-17T18:00:00+00:00,Jeddah,Saudi Arabia,Jeddah,2026
+11264,1283,Practice,Practice 3,2026-04-18T13:30:00+00:00,2026-04-18T14:30:00+00:00,Jeddah,Saudi Arabia,Jeddah,2026
+11265,1283,Qualifying,Qualifying,2026-04-18T17:00:00+00:00,2026-04-18T18:00:00+00:00,Jeddah,Saudi Arabia,Jeddah,2026
+11269,1283,Race,Race,2026-04-19T17:00:00+00:00,2026-04-19T19:00:00+00:00,Jeddah,Saudi Arabia,Jeddah,2026
+11270,1284,Practice,Practice 1,2026-05-01T16:30:00+00:00,2026-05-01T17:30:00+00:00,Miami,United States,Miami Gardens,2026
+11271,1284,Qualifying,Sprint Qualifying,2026-05-01T20:30:00+00:00,2026-05-01T21:14:00+00:00,Miami,United States,Miami Gardens,2026
+11275,1284,Race,Sprint,2026-05-02T16:00:00+00:00,2026-05-02T17:00:00+00:00,Miami,United States,Miami Gardens,2026
+11276,1284,Qualifying,Qualifying,2026-05-02T20:00:00+00:00,2026-05-02T21:00:00+00:00,Miami,United States,Miami Gardens,2026
+11280,1284,Race,Race,2026-05-03T20:00:00+00:00,2026-05-03T22:00:00+00:00,Miami,United States,Miami Gardens,2026
+11281,1285,Practice,Practice 1,2026-05-22T16:30:00+00:00,2026-05-22T17:30:00+00:00,Montreal,Canada,Montréal,2026
+11282,1285,Qualifying,Sprint Qualifying,2026-05-22T20:30:00+00:00,2026-05-22T21:14:00+00:00,Montreal,Canada,Montréal,2026
+11286,1285,Race,Sprint,2026-05-23T16:00:00+00:00,2026-05-23T17:00:00+00:00,Montreal,Canada,Montréal,2026
+11287,1285,Qualifying,Qualifying,2026-05-23T20:00:00+00:00,2026-05-23T21:00:00+00:00,Montreal,Canada,Montréal,2026
+11291,1285,Race,Race,2026-05-24T20:00:00+00:00,2026-05-24T22:00:00+00:00,Montreal,Canada,Montréal,2026
+11292,1286,Practice,Practice 1,2026-06-05T11:30:00+00:00,2026-06-05T12:30:00+00:00,Monte Carlo,Monaco,Monte Carlo,2026
+11293,1286,Practice,Practice 2,2026-06-05T15:00:00+00:00,2026-06-05T16:00:00+00:00,Monte Carlo,Monaco,Monte Carlo,2026
+11294,1286,Practice,Practice 3,2026-06-06T10:30:00+00:00,2026-06-06T11:30:00+00:00,Monte Carlo,Monaco,Monte Carlo,2026
+11295,1286,Qualifying,Qualifying,2026-06-06T14:00:00+00:00,2026-06-06T15:00:00+00:00,Monte Carlo,Monaco,Monte Carlo,2026
+11299,1286,Race,Race,2026-06-07T13:00:00+00:00,2026-06-07T15:00:00+00:00,Monte Carlo,Monaco,Monte Carlo,2026
+11300,1287,Practice,Practice 1,2026-06-12T11:30:00+00:00,2026-06-12T12:30:00+00:00,Catalunya,Spain,Barcelona,2026
+11301,1287,Practice,Practice 2,2026-06-12T15:00:00+00:00,2026-06-12T16:00:00+00:00,Catalunya,Spain,Barcelona,2026
+11302,1287,Practice,Practice 3,2026-06-13T10:30:00+00:00,2026-06-13T11:30:00+00:00,Catalunya,Spain,Barcelona,2026
+11303,1287,Qualifying,Qualifying,2026-06-13T14:00:00+00:00,2026-06-13T15:00:00+00:00,Catalunya,Spain,Barcelona,2026
+11307,1287,Race,Race,2026-06-14T13:00:00+00:00,2026-06-14T15:00:00+00:00,Catalunya,Spain,Barcelona,2026
+11308,1288,Practice,Practice 1,2026-06-26T11:30:00+00:00,2026-06-26T12:30:00+00:00,Spielberg,Austria,Spielberg,2026
+11309,1288,Practice,Practice 2,2026-06-26T15:00:00+00:00,2026-06-26T16:00:00+00:00,Spielberg,Austria,Spielberg,2026
+11310,1288,Practice,Practice 3,2026-06-27T10:30:00+00:00,2026-06-27T11:30:00+00:00,Spielberg,Austria,Spielberg,2026
+11311,1288,Qualifying,Qualifying,2026-06-27T14:00:00+00:00,2026-06-27T15:00:00+00:00,Spielberg,Austria,Spielberg,2026
+11315,1288,Race,Race,2026-06-28T13:00:00+00:00,2026-06-28T15:00:00+00:00,Spielberg,Austria,Spielberg,2026
+11316,1289,Practice,Practice 1,2026-07-03T11:30:00+00:00,2026-07-03T12:30:00+00:00,Silverstone,United Kingdom,Silverstone,2026
+11317,1289,Qualifying,Sprint Qualifying,2026-07-03T15:30:00+00:00,2026-07-03T16:14:00+00:00,Silverstone,United Kingdom,Silverstone,2026
+11321,1289,Race,Sprint,2026-07-04T11:00:00+00:00,2026-07-04T12:00:00+00:00,Silverstone,United Kingdom,Silverstone,2026
+11322,1289,Qualifying,Qualifying,2026-07-04T15:00:00+00:00,2026-07-04T16:00:00+00:00,Silverstone,United Kingdom,Silverstone,2026
+11326,1289,Race,Race,2026-07-05T14:00:00+00:00,2026-07-05T16:00:00+00:00,Silverstone,United Kingdom,Silverstone,2026
+11327,1290,Practice,Practice 1,2026-07-17T11:30:00+00:00,2026-07-17T12:30:00+00:00,Spa-Francorchamps,Belgium,Spa-Francorchamps,2026
+11328,1290,Practice,Practice 2,2026-07-17T15:00:00+00:00,2026-07-17T16:00:00+00:00,Spa-Francorchamps,Belgium,Spa-Francorchamps,2026
+11329,1290,Practice,Practice 3,2026-07-18T10:30:00+00:00,2026-07-18T11:30:00+00:00,Spa-Francorchamps,Belgium,Spa-Francorchamps,2026
+11330,1290,Qualifying,Qualifying,2026-07-18T14:00:00+00:00,2026-07-18T15:00:00+00:00,Spa-Francorchamps,Belgium,Spa-Francorchamps,2026
+11334,1290,Race,Race,2026-07-19T13:00:00+00:00,2026-07-19T15:00:00+00:00,Spa-Francorchamps,Belgium,Spa-Francorchamps,2026
+11335,1291,Practice,Practice 1,2026-07-24T11:30:00+00:00,2026-07-24T12:30:00+00:00,Hungaroring,Hungary,Budapest,2026
+11336,1291,Practice,Practice 2,2026-07-24T15:00:00+00:00,2026-07-24T16:00:00+00:00,Hungaroring,Hungary,Budapest,2026
+11337,1291,Practice,Practice 3,2026-07-25T10:30:00+00:00,2026-07-25T11:30:00+00:00,Hungaroring,Hungary,Budapest,2026
+11338,1291,Qualifying,Qualifying,2026-07-25T14:00:00+00:00,2026-07-25T15:00:00+00:00,Hungaroring,Hungary,Budapest,2026
+11342,1291,Race,Race,2026-07-26T13:00:00+00:00,2026-07-26T15:00:00+00:00,Hungaroring,Hungary,Budapest,2026
+11343,1292,Practice,Practice 1,2026-08-21T10:30:00+00:00,2026-08-21T11:30:00+00:00,Zandvoort,Netherlands,Zandvoort,2026
+11344,1292,Qualifying,Sprint Qualifying,2026-08-21T14:30:00+00:00,2026-08-21T15:14:00+00:00,Zandvoort,Netherlands,Zandvoort,2026
+11348,1292,Race,Sprint,2026-08-22T10:00:00+00:00,2026-08-22T11:00:00+00:00,Zandvoort,Netherlands,Zandvoort,2026
+11349,1292,Qualifying,Qualifying,2026-08-22T14:00:00+00:00,2026-08-22T15:00:00+00:00,Zandvoort,Netherlands,Zandvoort,2026
+11353,1292,Race,Race,2026-08-23T13:00:00+00:00,2026-08-23T15:00:00+00:00,Zandvoort,Netherlands,Zandvoort,2026
+11354,1293,Practice,Practice 1,2026-09-04T10:30:00+00:00,2026-09-04T11:30:00+00:00,Monza,Italy,Monza,2026
+11355,1293,Practice,Practice 2,2026-09-04T14:00:00+00:00,2026-09-04T15:00:00+00:00,Monza,Italy,Monza,2026
+11356,1293,Practice,Practice 3,2026-09-05T10:30:00+00:00,2026-09-05T11:30:00+00:00,Monza,Italy,Monza,2026
+11357,1293,Qualifying,Qualifying,2026-09-05T14:00:00+00:00,2026-09-05T15:00:00+00:00,Monza,Italy,Monza,2026
+11361,1293,Race,Race,2026-09-06T13:00:00+00:00,2026-09-06T15:00:00+00:00,Monza,Italy,Monza,2026
+11362,1294,Practice,Practice 1,2026-09-11T11:30:00+00:00,2026-09-11T12:30:00+00:00,Madring,Spain,Madrid,2026
+11363,1294,Practice,Practice 2,2026-09-11T15:00:00+00:00,2026-09-11T16:00:00+00:00,Madring,Spain,Madrid,2026
+11364,1294,Practice,Practice 3,2026-09-12T10:30:00+00:00,2026-09-12T11:30:00+00:00,Madring,Spain,Madrid,2026
+11365,1294,Qualifying,Qualifying,2026-09-12T14:00:00+00:00,2026-09-12T15:00:00+00:00,Madring,Spain,Madrid,2026
+11369,1294,Race,Race,2026-09-13T13:00:00+00:00,2026-09-13T15:00:00+00:00,Madring,Spain,Madrid,2026
+11370,1295,Practice,Practice 1,2026-09-24T08:30:00+00:00,2026-09-24T09:30:00+00:00,Baku,Azerbaijan,Baku,2026
+11371,1295,Practice,Practice 2,2026-09-24T12:00:00+00:00,2026-09-24T13:00:00+00:00,Baku,Azerbaijan,Baku,2026
+11372,1295,Practice,Practice 3,2026-09-25T08:30:00+00:00,2026-09-25T09:30:00+00:00,Baku,Azerbaijan,Baku,2026
+11373,1295,Qualifying,Qualifying,2026-09-25T12:00:00+00:00,2026-09-25T13:00:00+00:00,Baku,Azerbaijan,Baku,2026
+11377,1295,Race,Race,2026-09-26T11:00:00+00:00,2026-09-26T13:00:00+00:00,Baku,Azerbaijan,Baku,2026
+11378,1296,Practice,Practice 1,2026-10-09T08:30:00+00:00,2026-10-09T09:30:00+00:00,Singapore,Singapore,Marina Bay,2026
+11379,1296,Qualifying,Sprint Qualifying,2026-10-09T12:30:00+00:00,2026-10-09T13:14:00+00:00,Singapore,Singapore,Marina Bay,2026
+11383,1296,Race,Sprint,2026-10-10T09:00:00+00:00,2026-10-10T10:00:00+00:00,Singapore,Singapore,Marina Bay,2026
+11384,1296,Qualifying,Qualifying,2026-10-10T13:00:00+00:00,2026-10-10T14:00:00+00:00,Singapore,Singapore,Marina Bay,2026
+11388,1296,Race,Race,2026-10-11T12:00:00+00:00,2026-10-11T14:00:00+00:00,Singapore,Singapore,Marina Bay,2026
+11389,1297,Practice,Practice 1,2026-10-23T17:30:00+00:00,2026-10-23T18:30:00+00:00,Austin,United States,Austin,2026
+11390,1297,Practice,Practice 2,2026-10-23T21:00:00+00:00,2026-10-23T22:00:00+00:00,Austin,United States,Austin,2026
+11391,1297,Practice,Practice 3,2026-10-24T17:30:00+00:00,2026-10-24T18:30:00+00:00,Austin,United States,Austin,2026
+11392,1297,Qualifying,Qualifying,2026-10-24T21:00:00+00:00,2026-10-24T22:00:00+00:00,Austin,United States,Austin,2026
+11396,1297,Race,Race,2026-10-25T20:00:00+00:00,2026-10-25T22:00:00+00:00,Austin,United States,Austin,2026
+11397,1298,Practice,Practice 1,2026-10-30T18:30:00+00:00,2026-10-30T19:30:00+00:00,Mexico City,Mexico,Mexico City,2026
+11398,1298,Practice,Practice 2,2026-10-30T22:00:00+00:00,2026-10-30T23:00:00+00:00,Mexico City,Mexico,Mexico City,2026
+11399,1298,Practice,Practice 3,2026-10-31T17:30:00+00:00,2026-10-31T18:30:00+00:00,Mexico City,Mexico,Mexico City,2026
+11400,1298,Qualifying,Qualifying,2026-10-31T21:00:00+00:00,2026-10-31T22:00:00+00:00,Mexico City,Mexico,Mexico City,2026
+11404,1298,Race,Race,2026-11-01T20:00:00+00:00,2026-11-01T22:00:00+00:00,Mexico City,Mexico,Mexico City,2026
+11405,1299,Practice,Practice 1,2026-11-06T15:30:00+00:00,2026-11-06T16:30:00+00:00,Interlagos,Brazil,São Paulo,2026
+11406,1299,Practice,Practice 2,2026-11-06T19:00:00+00:00,2026-11-06T20:00:00+00:00,Interlagos,Brazil,São Paulo,2026
+11407,1299,Practice,Practice 3,2026-11-07T14:30:00+00:00,2026-11-07T15:30:00+00:00,Interlagos,Brazil,São Paulo,2026
+11408,1299,Qualifying,Qualifying,2026-11-07T18:00:00+00:00,2026-11-07T19:00:00+00:00,Interlagos,Brazil,São Paulo,2026
+11412,1299,Race,Race,2026-11-08T17:00:00+00:00,2026-11-08T19:00:00+00:00,Interlagos,Brazil,São Paulo,2026
+11413,1300,Practice,Practice 1,2026-11-20T00:30:00+00:00,2026-11-20T01:30:00+00:00,Las Vegas,United States,Las Vegas,2026
+11414,1300,Practice,Practice 2,2026-11-20T04:00:00+00:00,2026-11-20T05:00:00+00:00,Las Vegas,United States,Las Vegas,2026
+11415,1300,Practice,Practice 3,2026-11-21T00:30:00+00:00,2026-11-21T01:30:00+00:00,Las Vegas,United States,Las Vegas,2026
+11416,1300,Qualifying,Qualifying,2026-11-21T04:00:00+00:00,2026-11-21T05:00:00+00:00,Las Vegas,United States,Las Vegas,2026
+11420,1300,Race,Race,2026-11-22T04:00:00+00:00,2026-11-22T06:00:00+00:00,Las Vegas,United States,Las Vegas,2026
+11421,1301,Practice,Practice 1,2026-11-27T13:30:00+00:00,2026-11-27T14:30:00+00:00,Lusail,Qatar,Lusail,2026
+11422,1301,Practice,Practice 2,2026-11-27T17:00:00+00:00,2026-11-27T18:00:00+00:00,Lusail,Qatar,Lusail,2026
+11423,1301,Practice,Practice 3,2026-11-28T14:30:00+00:00,2026-11-28T15:30:00+00:00,Lusail,Qatar,Lusail,2026
+11424,1301,Qualifying,Qualifying,2026-11-28T18:00:00+00:00,2026-11-28T19:00:00+00:00,Lusail,Qatar,Lusail,2026
+11428,1301,Race,Race,2026-11-29T16:00:00+00:00,2026-11-29T18:00:00+00:00,Lusail,Qatar,Lusail,2026
+11429,1302,Practice,Practice 1,2026-12-04T09:30:00+00:00,2026-12-04T10:30:00+00:00,Yas Marina Circuit,United Arab Emirates,Yas Marina,2026
+11430,1302,Practice,Practice 2,2026-12-04T13:00:00+00:00,2026-12-04T14:00:00+00:00,Yas Marina Circuit,United Arab Emirates,Yas Marina,2026
+11431,1302,Practice,Practice 3,2026-12-05T10:30:00+00:00,2026-12-05T11:30:00+00:00,Yas Marina Circuit,United Arab Emirates,Yas Marina,2026
+11432,1302,Qualifying,Qualifying,2026-12-05T14:00:00+00:00,2026-12-05T15:00:00+00:00,Yas Marina Circuit,United Arab Emirates,Yas Marina,2026
+11436,1302,Race,Race,2026-12-06T13:00:00+00:00,2026-12-06T15:00:00+00:00,Yas Marina Circuit,United Arab Emirates,Yas Marina,2026

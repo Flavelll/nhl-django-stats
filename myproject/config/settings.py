@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stats_app',
     'nhl_app',
+    'f1_app',
 ]
 
 MIDDLEWARE = [

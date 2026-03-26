@@ -129,3 +129,33 @@ GROUP BY Team, Opponent, GameId, Season, GameType;
 
 CREATE UNIQUE INDEX IF NOT EXISTS idx_bx_unique
 ON bx (GameId, Playerid);
+
+CREATE TABLE f1_sessions (
+    session_key INT PRIMARY KEY,
+    meeting_key INT NOT NULL,
+
+    session_type VARCHAR(20) NOT NULL,
+    session_name VARCHAR(50),
+
+    date_start TIMESTAMPTZ NOT NULL,
+    date_end TIMESTAMPTZ,
+
+    circuit_short_name VARCHAR(100),
+    country_name VARCHAR(100),
+    location VARCHAR(100),
+
+    year INT NOT NULL
+);
+
+CREATE TABLE f1_laps (
+    meeting_key INT,
+    session_key INT,
+    driver_number INT,
+    lap_number INT,
+    date_start TIMESTAMP,
+    lap_duration FLOAT,
+    sector1 FLOAT,
+    sector2 FLOAT,
+    sector3 FLOAT,
+    is_pit_out BOOLEAN
+);
